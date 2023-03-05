@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- bootstrap css -->
+  <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-shopping-basket"></i> probinsya cart</a>
+
+    <nav class="navbar  py-4 fixed-top">
+        <a class="nav-link text-uppercase text-dark active" href="index.html">home</a>
+        <a href="shop.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="review.html">review</a>
+        <a href="blog.html">blog</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+        <h3 class="total"> total : <span>56.97</span> </h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box">
+        <input type="password" placeholder="enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create one</a></p>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="home">
+    
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                
+                <span>fresh and organic!</span>
+                <h3>Tangkilikin ang sariling atin</h3>
+                
+                <a href="shop.html" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>fresh and organic</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            <div class="image">
+                <img src="image/home-img-3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+
+</section>
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/banner-1.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="shop.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-2.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="shop.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-3.jpg" alt="">
+        <div class="content">
+            <span>limited sales</span>
+            <h3>upto 50% off</h3>
+            <a href="shop.html" class="btn">shop now</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- category section starts  -->
+
+<section class="category" id="category">
+
+    <h1 class="title"> our <span>category</span> <a href="shop.html">view all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Vegetables</h3>
+            <p>upto 50% off</p>
+            <img src="image/category-1.png" alt="">
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>juices</h3>
+            <p>upto 44% off</p>
+            <img src="image/category-2.png" alt="">
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>meat</h3>
+            <p>upto 35% off</p>
+            <img src="image/category-3.png" alt="">
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <h3>fruits</h3>
+            <p>upto 12% off</p>
+            <img src="image/category-4.png" alt="">
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<section class="product" id="product">
+
+    <h1 class="title"> our <span>products</span> <a href="shop.html">view all >></a> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="discount">20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-1.png" alt="">
+            <h3>organic banana</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱40.50 <span> ₱60.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">25%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-2.png" alt="">
+            <h3>organic tomato</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱60.50 <span> ₱80.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">20%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-3.png" alt="">
+            <h3>organic orange</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱80.50 <span> ₱100.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">14%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-4.png" alt="">
+            <h3>natural milk</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱210.50 <span> ₱250.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">50%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-5.png" alt="">
+            <h3>organic grapes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱100.50 <span> ₱200.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">10%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-9.png" alt="">
+            <h3>organic carrots</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱120.50 <span> ₱130.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">10%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/product-7.png" alt="">
+            <h3>organic apple</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱100.50 <span> ₱150.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <span class="discount">10%</span>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="image/deal-img2.png" alt="">
+            <h3>native pork</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price"> ₱280.50 <span> ₱380.20 </span> </div>
+            <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="1000" value="1">
+                <span> /kg </span>
+            </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        
+    </div>
+
+</section>
+
+<!-- product section ends -->
+
+
+
+<!-- deal section starts  -->
+
+<section class="deal" id="deal">
+
+    <div class="content">
+
+        <h3 class="title">deal of the day</h3>
+        <p>Flash Sale Alert: Limited Time Offer on Your Online Farm products!.Don't miss out on this amazing deal .<br> This offer is only available for the month of March, so act fast and stock up on your healthy essentials now!.</p>
+
+        <div class="count-down">
+            <div class="box">
+                <h3 id="day">00</h3>
+                <span>day</span>
+            </div>
+            <div class="box">
+                <h3 id="hour">00</h3>
+                <span>hour</span>
+            </div>
+            <div class="box">
+                <h3 id="minute">00</h3>
+                <span>minute</span>
+            </div>
+            <div class="box">
+                <h3 id="second">00</h3>
+                <span>second</span>
+            </div>
+        </div>
+
+        <a href="#" class="btn">check the deal</a>
+
+    </div>
+
+</section>
+
+<!-- deal section ends -->
+
+
+
+
+
+<!-- contact -->
+
+<section class="contact" id="contact">
+
+    <h1 class="title"> Get In Touch<span>with US</span>  </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/contact.png" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="first name">
+                <input type="text" placeholder="last name">
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="email address">
+                <input type="number" placeholder="phone">
+            </div>
+
+            <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="order now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="shop.html"> <i class="fas fa-arrow-right"></i> shop</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+            <a href="review.html"> <i class="fas fa-arrow-right"></i> review</a>
+            <a href="blog.html"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="https://formsubmit.co/sincodenito901@gmail.com" class = "input-group mb-3 mt-3" method="POST">
+                <input type="email" placeholder="enter your email" required>
+                <input type="submit" value="subscribe" class="btn" onclick="alert ('Thank you. You successfully become subscriber.')">
+                <input type="hidden" name="_autoresponse" value="Subject: Thank you for subscribing to our Happy Pet Shop!
+                Dear email,
+                
+                Thank you for subscribing to our Probinsya Cart! We are thrilled to have you join our community of pet lovers and enthusiasts.
+                
+                As a subscriber, you will receive regular updates on our latest products, promotions, and events. You'll also have access to exclusive offers and discounts, so be sure to keep an eye on your inbox.
+                
+                If you have any questions or need assistance, our customer service team is here to help. Simply reply to this email and we'll get back to you as soon as possible.
+                
+                Thank you again for subscribing to our Probinsya Cart. We can't wait to share our passion for pets with you!
+                
+                Best regards,
+                The Probinsya Cart Team">
+            </form>
+            <img src="image/payment.png" class="payment" alt="">
+        </div>
+
+    </div>
+
+</section>
+<section class="credit bg-dark">©Triple M's| all rights reserved!</section>
+
+
+  
+    
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+<script src="js/index2.js"></script>
+
+</body>
+</html>
