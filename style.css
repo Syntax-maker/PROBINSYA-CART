@@ -24,7 +24,7 @@ section {
 }
 
 .heading {
-  background: url(../image/heading-bg.jpg) no-repeat;
+  background: url(heading-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -389,7 +389,7 @@ section {
 
 .home {
   padding-top: 14rem;
-  background: url(../image/home-bg.jpg) no-repeat;
+  background: url(home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -556,7 +556,7 @@ section {
 
 /*deal */
 .deal{
-  background:url(../image/deal-bg.jpg) no-repeat;
+  background:url(deal-bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 7rem;
